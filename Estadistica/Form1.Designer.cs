@@ -30,8 +30,10 @@
         {
             this.lblserie = new System.Windows.Forms.Label();
             this.txtserie = new System.Windows.Forms.TextBox();
-            this.lblrespserie = new System.Windows.Forms.Label();
-            this.btnmediaaritmetica = new System.Windows.Forms.Button();
+            this.lblrespuesta = new System.Windows.Forms.Label();
+            this.btnmediaAritmetica = new System.Windows.Forms.Button();
+            this.btnEstandar = new System.Windows.Forms.Button();
+            this.btnTipica = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblserie
@@ -47,35 +49,57 @@
             // 
             this.txtserie.Location = new System.Drawing.Point(69, 49);
             this.txtserie.Name = "txtserie";
-            this.txtserie.Size = new System.Drawing.Size(303, 20);
+            this.txtserie.Size = new System.Drawing.Size(118, 20);
             this.txtserie.TabIndex = 1;
             // 
-            // lblrespserie
+            // lblrespuesta
             // 
-            this.lblrespserie.AutoSize = true;
-            this.lblrespserie.Location = new System.Drawing.Point(28, 79);
-            this.lblrespserie.Name = "lblrespserie";
-            this.lblrespserie.Size = new System.Drawing.Size(12, 13);
-            this.lblrespserie.TabIndex = 2;
-            this.lblrespserie.Text = "x";
+            this.lblrespuesta.AutoSize = true;
+            this.lblrespuesta.Location = new System.Drawing.Point(28, 79);
+            this.lblrespuesta.Name = "lblrespuesta";
+            this.lblrespuesta.Size = new System.Drawing.Size(12, 13);
+            this.lblrespuesta.TabIndex = 2;
+            this.lblrespuesta.Text = "x";
             // 
-            // btnmediaaritmetica
+            // btnmediaAritmetica
             // 
-            this.btnmediaaritmetica.Location = new System.Drawing.Point(31, 121);
-            this.btnmediaaritmetica.Name = "btnmediaaritmetica";
-            this.btnmediaaritmetica.Size = new System.Drawing.Size(75, 23);
-            this.btnmediaaritmetica.TabIndex = 3;
-            this.btnmediaaritmetica.Text = "Calcular x";
-            this.btnmediaaritmetica.UseVisualStyleBackColor = true;
-            this.btnmediaaritmetica.Click += new System.EventHandler(this.btnmediaaritmetica_Click);
+            this.btnmediaAritmetica.Location = new System.Drawing.Point(31, 121);
+            this.btnmediaAritmetica.Name = "btnmediaAritmetica";
+            this.btnmediaAritmetica.Size = new System.Drawing.Size(75, 23);
+            this.btnmediaAritmetica.TabIndex = 3;
+            this.btnmediaAritmetica.Text = "Calcular x";
+            this.btnmediaAritmetica.UseVisualStyleBackColor = true;
+            this.btnmediaAritmetica.Click += new System.EventHandler(this.btnmediaaritmetica_Click);
+            // 
+            // btnEstandar
+            // 
+            this.btnEstandar.Location = new System.Drawing.Point(127, 121);
+            this.btnEstandar.Name = "btnEstandar";
+            this.btnEstandar.Size = new System.Drawing.Size(99, 23);
+            this.btnEstandar.TabIndex = 4;
+            this.btnEstandar.Text = "Calcular Estandar";
+            this.btnEstandar.UseVisualStyleBackColor = true;
+            this.btnEstandar.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // btnTipica
+            // 
+            this.btnTipica.Location = new System.Drawing.Point(255, 121);
+            this.btnTipica.Name = "btnTipica";
+            this.btnTipica.Size = new System.Drawing.Size(96, 23);
+            this.btnTipica.TabIndex = 5;
+            this.btnTipica.Text = "Calcular Tipica";
+            this.btnTipica.UseVisualStyleBackColor = true;
+            this.btnTipica.Click += new System.EventHandler(this.button2_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(467, 226);
-            this.Controls.Add(this.btnmediaaritmetica);
-            this.Controls.Add(this.lblrespserie);
+            this.Controls.Add(this.btnTipica);
+            this.Controls.Add(this.btnEstandar);
+            this.Controls.Add(this.btnmediaAritmetica);
+            this.Controls.Add(this.lblrespuesta);
             this.Controls.Add(this.txtserie);
             this.Controls.Add(this.lblserie);
             this.Name = "Form1";
@@ -89,8 +113,10 @@
 
         private System.Windows.Forms.Label lblserie;
         private System.Windows.Forms.TextBox txtserie;
-        private System.Windows.Forms.Label lblrespserie;
-        private System.Windows.Forms.Button btnmediaaritmetica;
+        private System.Windows.Forms.Label lblrespuesta;
+        private System.Windows.Forms.Button btnmediaAritmetica;
+        private System.Windows.Forms.Button btnEstandar;
+        private System.Windows.Forms.Button btnTipica;
     }
 }
 

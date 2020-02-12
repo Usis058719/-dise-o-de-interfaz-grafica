@@ -12,6 +12,7 @@ namespace Estadistica
 {
     public partial class Form1 : Form
     {
+        estadistica objEstadistica = new estadistica();
         public Form1()
         {
             InitializeComponent();
@@ -19,7 +20,18 @@ namespace Estadistica
 
         private void btnmediaaritmetica_Click(object sender, EventArgs e)
         {
+            //split => divide una cadena en base a un delimitador (patron) y devuelve una matriz
+            lblrespuesta.Text = "X=" + objEstadistica.media(txtserie.Text.Split(','));
+        }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            lblrespuesta.Text = "Estandar=" + objEstadistica.estandar(txtserie.Text.Split(','));
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            lblrespuesta.Text = "Tipica=" + objEstadistica.tipica(txtserie.Text.Split(
         }
     }
 }
